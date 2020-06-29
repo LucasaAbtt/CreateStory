@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Form a Story</title>
+  </head>
+  <body>
+    <section id="top">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-html-forms/formAStoryLogo.svg" alt="Form A Story Logo">
+    </section>
+
+    <section id="main">
+      <h1>Completar el formulario -<br> Completar la historia!</h1>
+      <hr>
+      <!--Add your form below:-->
+      <form action="story.html" method="GET">
+        <input type="submit" value="Formar Mi Historia!">
+        <br>
+        <label for="animal-1">Elige un animal:</label>
+        <input id="animal-1" type="text" name="animal-1" required>
+        <br>
+        <label for="animal-2">Elige otro animal:</label>
+        <input id="animal-2" type="text" name="animal-2" required>
+        <br>
+        <label for="animal-3">Elige un ultimo animal:</label>
+        <input id="animal-3" type="text" name="animal-3" required>
+        <br>
+        <label for="adj-1">Elige un adjetivo (En pasado):</label>
+        <input id="adj-1" name="adj-1" type="text" required>
+        <br>
+        <label for="verb-1">Elige un verbo (terminado en -ando/-endo):</label>
+        <input id="verb-1" name="verb-1" type="text" required>
+        <br>
+        <label for="num-1">Elige un numero:</label>
+        <input id="num-1" name="num-1" type="number" required>
+        <br>
+        <span>Si o No?:</span>
+        <input id="si" type="radio" name="answer" value="si" required>
+        <label for="si">Si</label>
+        <input id="no" type="radio" name="answer" value="no">
+        <label for="no">No</label>
+        <br>
+        <label for="speed">Elige una velocidad:</label>
+        <select id="speed" name="speed">
+          <option value="rapido">rapido</option>
+          <option value="lento">lento</option>
+          <option value="a paso de tortuga">a paso de tortuga</option>
+          <option value="mas rapido que la mierda">mas rapido que la mierda</option>   
+          </select>
+        <br>
+        <label for="quote">Elige una frase motivacional:</label>
+        <input id="quote" name="quote" type="text" required list="quote-choices">
+        <datalist id="quote-choices">
+        
+          <br>
+          <option value="el ganador recibe pija"></option>
+          <option value="el ganador tiene un parecido a Hitler"></option>
+          <option value="el perdedor es de boca"></option>
+          <option value="el perdedor se la come"></option>
+          </datalist>
+        <br>
+          <label for="message">Elige una moraleja:</label>
+          <textarea id="message" name="message" rows="8" columns="40" minlength="6" required>
+            </textarea> 
+          <br>
+        </form>
+      
+    </section>
+  </body>
+</html>
